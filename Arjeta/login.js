@@ -120,10 +120,65 @@ function submitAll() {
     genderValid();
 }
 
-btn.addEventListener('click', function (e) {
-    e.preventDefault();
+// btn.addEventListener('click', function (e) {
+//     e.preventDefault();
 
-    submitAll();
-});
+//     submitAll();
+// });
+
+var elements = document.getElementsByClassName("input");
+var data = {};
+
+for (var element of elements) {
+    element.addEventListener("keyup", function (e) {
+        e.preventDefault();
+        data[e.target.name] = e.target.value;
+        console.log(data);
+        if (e.target.name == "firstname") {
+            var text =/^$/;;
+            var color = "";
+            var message = "";
+            var display = "";
+            var margin ="";
+            var lbl = document.getElementById("message");
+            if (!text.test(e.target.value)) {
+                message = "Emri nuk eshte valid";
+                lbl.classList.remove("hidden");
+
+                display = "block"
+                color = "red";
+                margin = "70px";
+
+            }
+            lbl.innerHTML = message;
+            lbl.style.color = color;
+            lbl.style.display = display;
+            lbl.style.margin = margin-left;
+
+        }
+        if (e.target.name == "lastname") {
+            var textReg = /^[a-zA-Z0-9!@#$%^&*]{6,20}$/;
+            var color = "";
+            var message = "";
+            var display = "";
+
+            var lbl = document.getElementById("message1");
+            if (!textReg.test(e.target.value)) {
+                message = "Mbiemri nuk eshte valid";
+                lbl.classList.remove("hidden");
+
+                display = "block"
+                color = "red";
+                margin = "70px";
+
+            }
+            lbl.innerHTML = message;
+            lbl.style.color = color;
+            lbl.style.display =;
+
+        }
+    });
+
+}
 
 
