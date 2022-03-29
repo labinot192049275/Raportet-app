@@ -161,7 +161,7 @@ for (var element of elements) {
             var color = "";
             var message = "";
             var display = "";
-
+            var margin ="";
             var lbl = document.getElementById("message1");
             if (!textReg.test(e.target.value)) {
                 message = "Mbiemri nuk eshte valid";
@@ -174,7 +174,7 @@ for (var element of elements) {
             }
             lbl.innerHTML = message;
             lbl.style.color = color;
-            lbl.style.display =;
+            lbl.style.display =margin-left;
 
         }
     });
