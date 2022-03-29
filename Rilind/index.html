@@ -196,8 +196,10 @@
                 </span>
             </div>
             <div class="">
-                <h1>Your Personal Details</h1>
-                <hr>
+                <div class="second-section-h1-container pt-3 px-3">
+                    <span class="h3">Your Personal Details</span>
+                    <hr class="mb-0 mt-2">
+                </div>
                 <div class="row p-3">
                     <div class="row my-2">
                         <span class="col-2 lead text-end">
@@ -224,7 +226,10 @@
                         <input type="text" class="col form-control">
                     </div>
 
-
+                    <div class="second-section-h1-container pt-3">
+                        <span class="h3">Your Password</span>
+                        <hr class="mt-2">
+                    </div>
 
                     <div class="row my-2">
                         <span class="col-2 lead text-end">
@@ -238,11 +243,40 @@
                         </span>
                         <input type="text" class="col form-control">
                     </div>
+
+                    <div class="second-section-h1-container pt-3">
+                        <span class="h3">Newsletter</span>
+                        <hr>
+                    </div>
+
+                    <div class="row my-2 d-flex">
+                        <span class="col-2 lead text-end align-self-center">
+                            Subscribe
+                        </span>
+                        <div class="col form-check form-switch">
+                            <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                            <label class="form-check-label" for="flexSwitchCheckDefault">
+                                Yes/No
+                            </label>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div class="d-flex flex-row align-items-center">
+                            <span class="col text-end">I have read and agree to the <b>Privacy Policy</b></span>
+                            <input class="form-check-input mx-2" type="checkbox" value="" id="flexCheckDefault">
+                            <button class="btn btn-primary mx-3">Continue</button>
+                        </div>
+                    </div>
                 </div>
             </div>
 
         </div>
     </section>
+
+    <footer>
+
+    </footer>
 
     <script src="bootstrap-5/js/bootstrap.js"></script>
     <script src="js/login.js"></script>
