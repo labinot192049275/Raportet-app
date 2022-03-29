@@ -1,0 +1,66 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.btn:focus:active{
+    box-shadow: none;
+}
+
+header{
+}
+
+.icon-size{
+    font-size: 20px;
+}
+
+#main-nav{
+    background-color: #111111;
+}
+
+#header-line-divider{
+    width: 1px;
+    height: 100%;
+    background: white;
+}
+
+#mid-header{
+    background: #191919;
+}
+
+#second-header nav{
+    background: #E8B447;
+}
+
+.bot-nav-link{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#third-header{
+    background: #F5F5F5;
+}
+
+
+
+#form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#form-controll{
+    margin-bottom: 15px;
+}
+
+small{
+    color: red;
+    display: none;
+}
+
+.btn:focus:active{
+    box-shadow: none;
+}
+
