@@ -206,25 +206,43 @@
                         <span class="col-2 lead text-end">
                             First Name
                         </span>
-                        <input type="text" class="col form-control">
+                        <input type="text" name="firstname" class="col form-control input">
+                        <span class="hidden text-center" id="message"></span>
                     </div>
                     <div class="row my-2">
                         <span class="col-2 lead text-end">
                             Last Name
                         </span>
-                        <input type="text" class="col form-control">
+                        <input type="text" name="lastname" class="col form-control input">
+                        <span class="hidden text-center" id="message1"></span>
                     </div>
                     <div class="row my-2">
                         <span class="col-2 lead text-end">
                             E-Mail
                         </span>
-                        <input type="text" class="col form-control">
+                        <input type="text" name="email" class="col form-control input">
+                        <span class="hidden text-center" id="message2"></span>
+                    </div>
+                    <div class="row my-2">
+                        <span class="col-2 lead text-end">
+                            Username
+                        </span>
+                        <input type="text" name="username" class="col form-control input">
+                        <span class="hidden text-center" id="message7"></span>
                     </div>
                     <div class="row my-2">
                         <span class="col-2 lead text-end">
                             Telephone
                         </span>
-                        <input type="text" class="col form-control">
+                        <input type="text" name="phone" class="col form-control input">
+                        <span class="hidden text-center" id="message3"></span>
+                    </div>
+                    <div class="row my-2">
+                        <span class="col-2 lead text-end">
+                            Date of Birth
+                        </span>
+                        <input type="text" name="birthday" class="col form-control input">
+                        <span class="hidden text-center" id="message6"></span>
                     </div>
 
                     <div class="second-section-h1-container pt-3">
@@ -236,13 +254,15 @@
                         <span class="col-2 lead text-end">
                             Password
                         </span>
-                        <input type="text" class="col form-control">
+                        <input type="text" name="password" id="password" class="col form-control input">
+                        <span class="hidden text-center" id="message4"></span>
                     </div>
                     <div class="row my-2">
                         <span class="col-2 lead text-end">
                             Password Confirm
                         </span>
-                        <input type="text" class="col form-control">
+                        <input type="text" name="confirm_pw" id="confirmpass" class="col form-control input">
+                        <span class="hidden text-center" id="message5"></span>
                     </div>
 
                     <div class="second-section-h1-container pt-3">
@@ -266,7 +286,7 @@
                         <div class="d-flex flex-row align-items-center">
                             <span class="col text-end">I have read and agree to the <b>Privacy Policy</b></span>
                             <input class="form-check-input mx-2" type="checkbox" value="" id="flexCheckDefault">
-                            <button class="btn btn-primary mx-3">Continue</button>
+                            <button class="btn btn-primary mx-3" id="btn">Continue</button>
                         </div>
                     </div>
                 </div>
@@ -283,7 +303,8 @@
                 <div class="col-3 d-flex flex-column" id="img-container">
                     <img src="images/logo.png" class="align-self-start mb-4" alt="">
                     <span class="text-secondary align-self-center">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus placeat alias excepturi facere adipisci explicabo?
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus placeat alias excepturi
+                        facere adipisci explicabo?
                     </span>
                 </div>
                 <div class="col-3">

@@ -1,4 +1,4 @@
-// inputs
+inputs
 const nameInput = document.getElementById('firstname');
 const lastnameInput = document.getElementById('lastname');
 const emailInput = document.getElementById('email');
