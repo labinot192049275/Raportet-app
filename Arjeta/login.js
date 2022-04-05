@@ -70,7 +70,7 @@ for (var element of elements) {
             if (!textReg.test(e.target.value)) {
                 message = "Username nuk eshte valid";
                 lbl.classList.remove("hidden");
-   
+
                 color = "red";
             }
             lbl.innerHTML = message;
@@ -110,9 +110,10 @@ for (var element of elements) {
 }
 
 function passValidation() {
-    var passReg =  /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;
+    var passReg = /^(?=.*[0-9])(?=.*[!@#$%^&*])[a-zA-Z0-9!@#$%^&*]{7,15}$/;
     var passColor = "";
     if (!passReg.test(password.value)) {
+        setError(password, 'Password jovalid')
         document.getElementById("message4").innerHTML = "Password jovalid! ";
         document.getElementById("message4").classList.remove("hidden");
         passColor = "red";
