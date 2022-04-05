@@ -18,6 +18,7 @@ const phone=document.getElementById('phone');
 const date=document.getElementById('date');
 const password=document.getElementById('password');
 const confirmPassword=document.getElementById('confirmpass');
+const pwReg = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])[0-9a-zA-Z]{8,}$/
 
 
 // if(){
@@ -109,6 +110,17 @@ password.focus();
 return false;
 
 }
+if(password.value.match(pwReg)){
+    alert('correct pass format')
+}
+
+else{
+    alert('password is not valid');
+
+}
+if(password.value !== confirmPassword.value){
+    alert('not match values')
+}
 
 if(confirmPassword.value===""){
 
@@ -122,7 +134,6 @@ return false;
 }
 
 return true; 
-
 }
 
 
