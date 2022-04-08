@@ -58,8 +58,9 @@ small{
     box-shadow: none;
 }
 
-footer{
-    background-color:  #191919;
+.btn:disabled{
+    background-color: black;
+    opacity: 60%;
 }
 
 .btn-radius{
@@ -79,4 +80,13 @@ footer{
 .btn-radius:focus:active{
     background-color: black;
     box-shadow: none;
+}
+
+#button-addon2{
+    color: white;
+    border-color: white;
+}
+
+footer{
+    background-color:  #191919;
 }
