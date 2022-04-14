@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charst="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=Neo,initial-scale=1.0">
+
+        <title>upload post</title>
+    </head>
+    <style>
+       @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500&display=swap');
+        * {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+            margin: 0;
+            padding:0;
+            box-sizing: border-box;
+           
+        }
+        body{
+            background-image: url(backroundd.jpg);
+            padding: 0;
+            background-repeat: no-repeat;
+            justify-content: center; 
+            background-size: cover ;
+            
+       background-position: right;
+        }
+    .container{
+        max-width:600px;
+        margin:auto ;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+
+       background-position: right;
+       
+       }
+
+    .form-group{
+        margin-top:15px;
+position:absolute;
+width: 500px;
+}
+.form-group h1
+       {
+           font-size: 40px;
+           text-align:center ;
+           text-transform: uppercase;
+           margin: 40px 0;
+  } 
+  .form-group label{
+      font-size: 25px;
+      margin: 15px 0;
+
+  }
+  .form-group input,textarea{
+      font-size: 20px;
+      margin-top:10px;
+      margin-bottom:20px;
+      padding:15px ;
+      width:100%;
+      border:0;
+      border-radius: 5px;
+      outline: none;
+    }
+    input[type=submit]{
+        margin-bottom: 20px;
+        width:100%;
+        padding:15px;
+        border-radius:5px;
+        background: rgb(255, 252, 214);
+        font-size: 18px;
+        cursor:pointer;
+        font-weight: bold;
+    }
+    
+    </style>
+    
+    <body>
+        <div class="container">
+            <div class="form-group">
+                <h1 class="titleForm">New Post</h1>
+                <form action="" method="post">
+        
+        
+                    <label >Title</label>
+                    <input maxlength="30" type="text" name="titulli" value="titulli" placeholder="Titulli i postimit...">
+                    <label>Description</label>
+                    <textarea  maxlength="180" name="pershkrimi" cols="20" rows="4"
+                        placeholder="Pershkrimi i postimit..." value=""pershkrimi></textarea>
+                    <label>Price</label>
+                    <input type="number" min="0.0" max="1000000.00" step="0.1" placeholder="" value="qmimi">
+                    <label>Upload Photos</label>
+                    <input class="upload" id="upload_images" multiple="multiple" type="file" value="Ngarkoni fotografi">
+                    <input class="form-input" type="submit" value="post">
+            </div>
+         </form>
+        </div>
+    </body>
+    
+    </html>
