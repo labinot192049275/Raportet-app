@@ -1,0 +1,20 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+#navbarDropdown{
+    background-color: lightgrey;
+    border: none;
+}
+
+#navbarDropdown:focus,
+#navbarDropdown:focus:active{
+    box-shadow: none;
+}
+
+#sidebar-brand{
+    padding: 0;
+}
+
+
