@@ -35,6 +35,12 @@ public class UserController : Controller
     //{
     //    return View();
     //}
-    
+
+
+    //get
+    public IActionResult Dashboard()
+    {
+        return View();
+    }   
 }
 

@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="~/css/dashboard.css" />
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css"/>
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="nav-first-ul">
+                <li>
+                    <a href="@Url.Action("Dashboard", "User")" class="nav-link m-0">
+                        <h2>Dashboard</h2>
+                    </a>
+                </li>
+                <ul id="nav-inner-ul">
+                    <li>
+                        <a href="@Url.Action("Home", "Home")"><i class='bx bxs-home'></i></a>
+                    </li>
+                    <li>
+                        <!-- Logout -->
+                        <a href="#" class="nav-link p-0">Logout</a>
+                        <a href="#"><i class='bx bx-log-in'></i></a></a>
+                    </li>
+                </ul>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="body-content" class="container row">
+        <section class="sidebar-section col-3">
+            <div class="sidebar">
+                <ul>
+                    <hr>
+                    <li>
+                        <a href="adminDashboard.php" class="text-white nav-link p-0">
+                            <i class='bx bx-table'></i>
+                            Tables & Panels
+                        </a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a id="formsDropdown">
+                            <i class='bx bx-menu'></i>
+                            Edit Menu
+                        </a>
+                        <ul id="dropdown">
+                            <li>
+                                <a href="addProduct.php">
+                                    <i class='bx bx-plus'></i>
+                                    Add Products
+                                </a>
+                            </li>
+                            <li>
+                                <a href="editProduct.php">
+                                    <i class='bx bx-edit'></i>
+                                    Edit Product
+                                </a>
+                            </li>
+                            <li>
+                                <a href="deleteProduct.php">
+                                    <i class='bx bx-trash'></i>
+                                    Delete Product
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <hr>
+                </ul>
+            </div>
+        </section>
+
+    @RenderBody()
+
+</body>
+</html>
