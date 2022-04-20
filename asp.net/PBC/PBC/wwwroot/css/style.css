@@ -1,0 +1,96 @@
+﻿*{
+    padding: 0;
+    margin: 0;
+}
+
+.btn:focus:active{
+    box-shadow: none;
+}
+
+.icon-size{
+    font-size: 20px;
+}
+
+.dropdown-menu[data-bs-popper]{
+    left:auto!important;
+}
+
+#main-nav{
+    background-color: #111111;
+}
+
+#header-line-divider{
+    width: 1px;
+    height: 100%;
+    background: white;
+}
+
+#mid-header{
+    background: #191919;
+}
+
+#second-header nav{
+    background: #E8B447;
+}
+
+.bot-nav-link{
+    font-size: 17px;
+    font-weight: 500;
+}
+
+#third-header{
+    background: #F5F5F5;
+}
+
+#form-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+#form-controll{
+    margin-bottom: 15px;
+}
+
+small{
+    color: red;
+}
+
+.btn:focus:active{
+    box-shadow: none;
+}
+
+.btn:disabled{
+    background-color: black;
+    opacity: 60%;
+}
+
+.btn-radius{
+    background-color: black;
+    border: none;
+    border-radius: 50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.btn-radius:hover{
+    background-color: black;
+    opacity: 80%;
+}
+
+.btn-radius:focus,
+.btn-radius:focus:active{
+    background-color: black;
+    box-shadow: none;
+}
+
+#button-addon2{
+    color: white;
+    border-color: white;
+}
+
+footer{
+    background-color:  #191919;
+}

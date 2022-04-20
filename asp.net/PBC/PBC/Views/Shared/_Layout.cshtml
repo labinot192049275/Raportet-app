@@ -1,0 +1,264 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] - PBC</title>
+    <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+
+        <!-- TOP HEADER -->
+        <nav class="navbar navbar-expand-lg navbar-dark" id="main-nav">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-currency-dollar"></i> Currency
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <div id="header-line-divider"></div>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-white" href="#" id="navbarDropdown" role="button"
+                               data-bs-toggle="dropdown" aria-expanded="false">
+                                <i class="bi bi-flag"></i> Language
+                            </a>
+                            <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <form class="d-flex">
+                        <a class="btn btn-outline-white text-white icon-size"><i class="bi bi-search"></i></a>
+                        <a class="nav-link text-white" href="#" id="navbarDropdown" role="button"
+                           data-bs-toggle="dropdown" aria-expanded="false">
+                            <i class="bi bi-person-circle icon-size"></i>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                            <li><a href="@Url.Action("Login", "User")" class="dropdown-item">Login</a></li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a href="@Url.Action("Register", "User")" class="dropdown-item">Register</a></li>
+                        </ul>
+                        <a class="btn btn-outline-white text-white icon-size"><i class="bi bi-cart3"></i></a>
+                        <input class="form-control me-2 d-none" type="search" placeholder="Search" aria-label="Search">
+                    </form>
+                </div>
+            </div>
+        </nav>
+        <!-- END TOP HEADER -->
+        <!-- MID HEADER -->
+        <div id="mid-header">
+            <div class="container">
+                <div class="d-flex justify-content-center p-4">
+                    <a href="@Url.Action("Index", "Home")">
+                        <img src="~/images/logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+        <!-- END MID HEADER -->
+        <!-- 2nd MID HEADER -->
+        <div id="second-header">
+
+            <nav class="navbar navbar-expand-lg navbar-dark" id="main-nav">
+                <div class="container">
+                    <div class="collapse navbar-collapse d-flex justify-content-center" id="navbarSupportedContent">
+                        <ul class="navbar-nav d-flex flex-row mb-2 mb-lg-0">
+                            <li class="nav-item dropdown px-1">
+                                <a class="nav-link text-black bot-nav-link" href="#" id="navbarDropdown" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                    Home<i class='bx bx-chevron-down'></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown px-1">
+                                <a class="nav-link text-black bot-nav-link" href="#" id="navbarDropdown" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                    About Us<i class='bx bx-chevron-down'></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown px-1">
+                                <a class="nav-link text-black bot-nav-link" href="#" id="navbarDropdown" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                    Shop<i class='bx bx-chevron-down'></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown px-1">
+                                <a class="nav-link text-black bot-nav-link" href="#" id="navbarDropdown" role="button"
+                                   data-bs-toggle="dropdown" aria-expanded="false">
+                                    More<i class='bx bx-chevron-down'></i>
+                                </a>
+                                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <li><a class="dropdown-item" href="#">Action</a></li>
+                                    <li><a class="dropdown-item" href="#">Another action</a></li>
+                                    <li>
+                                        <hr class="dropdown-divider">
+                                    </li>
+                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+
+                    </div>
+                </div>
+            </nav>
+
+        </div>
+        <!-- END 2nd MID HEADER -->
+        <!-- FOOTER HEADER -->
+        <!-- there is no footer header in home.html  -->
+        <!-- END FOOTER HEADER -->
+    </header>
+
+    @RenderBody()
+
+    <!-- FOOTER -->
+    <footer class="border-top footer text-muted">
+        <div class="container py-5 pb-3">
+            <div class="row" id="footer-wrapper">
+                <div class="col-12 col-md-6 col-lg-3 pb-5 pb-md-0 d-flex flex-column" id="img-container">
+                    <img src="images/logo.png" class="align-self-start mb-4" alt="">
+                    <span class="text-secondary align-self-center">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus placeat alias excepturi
+                        facere adipisci explicabo?
+                    </span>
+                </div>
+                <div class="col-6 col-md-6 col-lg-3">
+                    <span class="h2 text-capitalize text-white">My Account</span>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="nav-link text-secondary p-0 py-1">My Account</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-secondary p-0 py-1">Wish List</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-secondary p-0 py-1">Gift Certificates</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-secondary p-0 py-1">Returns</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-secondary p-0 py-1">Specials</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-6 col-lg-3">
+                    <span class="h3 text-capitalize text-white">Extras</span>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="nav-link text-secondary p-0 py-1">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-secondary p-0 py-1">Delivery Information</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-secondary p-0 py-1">Privacy Policy</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-secondary p-0 py-1">Terms & Conditions</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-secondary p-0 py-1">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+
+                <div class="col-6 col-md-6 col-lg-3">
+                    <span class="h2 text-capitalize text-white">Store Information</span>
+                    <ul class="list-unstyled">
+                        <li>
+                            <a href="#" class="nav-link text-secondary p-0 py-1">Demo Store</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-secondary p-0 py-1">Telephone"""""</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-secondary p-0 py-1">Telephone"""""</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-secondary p-0 py-1">Gmail"""""""</a>
+                        </li>
+                        <li>
+                            <a href="#" class="nav-link text-secondary p-0 py-1">Specials</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="footer-bot">
+                <div class="row">
+                    <hr class="text-white">
+                    <div class="socials d-flex flex-column">
+                        <span class="lead text-white mb-2 align-self-center">
+                            Powered By <b>OpenCart</b> Your Store &copy; 2022
+                        </span>
+                        <ul class="list-unstyled d-flex flex-row text-white justify-content-center">
+                            <li><i class="bi bi-facebook p-3 fs-5"></i></li>
+                            <li><i class="bi bi-twitter p-3 fs-5"></i></li>
+                            <li><i class="bi bi-youtube p-3 fs-5"></i></li>
+                            <li><i class="bi bi-instagram p-3 fs-5"></i></li>
+                            <li><i class="bi bi-pinterest p-3 fs-5"></i></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- END FOOTER -->
+    <script src="~/lib/jquery/dist/jquery.min.js"></script>
+    <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>

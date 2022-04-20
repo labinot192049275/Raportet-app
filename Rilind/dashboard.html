@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="bootstrap-5/css/bootstrap.css">
+    <link rel="stylesheet" href="css/dashboard.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul id="nav-first-ul">
+                <li>
+                    <a href="">
+                        <h1>Dashboard</h1>
+                    </a>
+                </li>
+                <ul id="nav-inner-ul">
+                    <li>
+                        <a href="index.php"><i class='bx bxs-home'></i></a>
+                    </li>
+                    <li>
+                        <!-- Logout -->
+                        <a href="#">Logout</a>
+                        <a href="#"><i class='bx bx-log-in'></i></a></a>
+                    </li>
+                </ul>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="body-content" class="container row">
+        <section class="sidebar-section col-3">
+            <div class="sidebar">
+                <ul>
+                    <hr>
+                    <li>
+                        <a href="adminDashboard.php">
+                            <i class='bx bx-table'></i>
+                            Tables & Panels
+                        </a>
+                    </li>
+                    <hr>
+                    <li>
+                        <a id="formsDropdown">
+                            <i class='bx bxs-menu'></i>
+                            Edit Menu
+                        </a>
+                        <ul id="dropdown">
+                            <li>
+                                <a href="addProduct.php">
+                                    <i class='bx bx-plus'></i>
+                                    Add Products
+                                </a>
+                            </li>
+                            <li>
+                                <a href="editProduct.php">
+                                    <i class='bx bx-edit'></i>
+                                    Edit Product
+                                </a>
+                            </li>
+                            <li>
+                                <a href="deleteProduct.php">
+                                    <i class='bx bx-trash'></i>
+                                    Delete Product
+                                </a>
+                            </li>
+                        </ul>
+                    </li>
+                    <hr>
+                </ul>
+            </div>
+        </section>
+        
+        <div class="content col">
+            <div class="content-header">
+                <div class="div-h1">
+                    <span>Tables Page</span>
+                </div>
+            </div>
+            <hr>
+            <section class="top-section">
+                <div class="top-section-header">
+                    <h1>Advanced Tables</h1>
+                    <hr>
+                </div>
+                <div class="top-section-content">
+                    <ul>
+                        <li>
+                            <select name="dropmenu" id="">
+                                <option value="option">10</option>
+                                <option value="option">25</option>
+                            </select>
+                            <span>records per page</span>
+                        </li>
+                        <li><input type="text" placeholder="Search"></li>
+                    </ul>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="6" style="height: 30px;">Users Table</th>
+                                </tr>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Name</th>
+                                    <th>Username</th>
+                                    <th>Email</th>
+                                    <th>Admin</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>aaaaaaaaaa</td>
+                                    <td>aaaaaaaaa</td>
+                                    <td>aaaaaaaa</td>
+                                    <td>aaaaaaa</td>
+                                    <td>aaaaaa</td>
+                                    <td class='last-col'>
+                                        <a href="">
+                                            <i class='bx bx-edit btn-edit'></i>
+                                        </a>
+                                        <a href="">
+                                            <i class='bx bx-edit btn-delete'></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="top-section-footer">
+                    <div class="top-section-footer-container">
+                        <ul>
+                            <li>
+                                Showing 1 to 25 of 57 entries
+                            </li>
+                            <li>
+                                <button>Previous</button>
+                                <button>1</button>
+                                <button>2</button>
+                                <button>3</button>
+                                <button>Next</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <section class="top-section">
+                <hr>
+                <div class="top-section-content">
+                    <ul>
+                        <li>
+                            <select name="dropmenu" id="">
+                                <option value="number">10</option>
+                                <option value="number">25</option>
+                            </select>
+                            <span>records per page</span>
+                        </li>
+                        <li><input type="text" placeholder="Search"></li>
+                    </ul>
+                    <div class="table-container">
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th colspan="9" style="height: 30px;">Products Table</th>
+                                </tr>
+                                <tr>
+                                    <th>Id</th>
+                                    <th>Name</th>
+                                    <th>Brand</th>
+                                    <th>Price</th>
+                                    <th>Current Price</th>
+                                    <th></th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>aaaaaaaaaa</td>
+                                    <td>aaaaaaaaa</td>
+                                    <td>aaaaaaaa</td>
+                                    <td>aaaaaaa</td>
+                                    <td>aaaaaa</td>
+                                    <td class='last-col'>
+                                        <a href="">
+                                            <i class='bx bx-edit btn-edit'></i>
+                                        </a>
+                                        <a href="">
+                                            <i class='bx bx-edit btn-delete'></i>
+                                        </a>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="top-section-footer">
+                    <div class="top-section-footer-container">
+                        <ul>
+                            <li>
+                                Showing 1 to 25 of 57 entries
+                            </li>
+                            <li>
+                                <button>Previous</button>
+                                <button>1</button>
+                                <button>2</button>
+                                <button>3</button>
+                                <button>Next</button>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+                </div>
+            </section>
+        </div>
+
+
+    </div>
+
+    <script src="js/dashboard.js"></script>
+</body>
+</html>    

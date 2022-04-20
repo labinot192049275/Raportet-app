@@ -1,0 +1,143 @@
+﻿@model User
+
+@{
+    ViewBag.Title = "Register Page";
+    <link href="@Url.Content("~/css/style.css")" rel="stylesheet" />
+}
+
+<header>
+    <!-- FOOTER HEADER -->
+    <div id="third-header">
+        <div class="container">
+            <ul class="nav justify-content-between p-3">
+                <li class="nav-item d-flex">
+                    <span class="text-uppercase align-self-center">Register Account</span>
+                </li>
+                <ul class="list-unstyled d-flex">
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#">
+                            <i class='bx bxs-home'></i>
+                        </a>
+                    </li>
+                    <li class="nav-item d-flex align-items-center">
+                        <i class='bx bx-chevron-right'></i>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-black" href="#">REGISTER</a>
+                    </li>
+                </ul>
+            </ul>
+        </div>
+    </div>
+    <!-- END FOOTER HEADER -->
+</header>
+
+<!-- SECOND SECTION -->
+<section id="first-section">
+    <div class="container">
+        <div class="p-3">
+            <span class="lead">
+                If you already have an account with us, please login at the login page.
+            </span>
+        </div>
+        <div class="">
+            <div class="second-section-h1-container pt-3 px-3">
+                <span class="h3">Your Personal Details</span>
+                <hr class="mb-0 mt-2">
+            </div>
+            <div class="row p-3">
+                <form method="post">
+                    <div class="row my-2">
+                        <span class="col-2 lead text-end">
+                            First Name
+                        </span>
+                        <input type="text" name="firstname" class="col form-control input" id="userid">
+                        <span asp-validation-for="Name"></span>
+                    </div>
+                    <div class="row my-2">
+                        <span class="col-2 lead text-end">
+                            Last Name
+                        </span>
+                        <input type="text" name="lastname" class="col form-control input" id="lastnameId">
+                        <span asp-validation-for="LastName"></span>
+                    </div>
+                    <div class="row my-2">
+                        <span class="col-2 lead text-end">E-Mail</span>
+                        <input type="text" name="email" class="col form-control input">
+                        <span asp-validation-for="Email"></span>
+                    </div>
+                    <div class="row my-2">
+                        <span class="col-2 lead text-end">
+                            Username
+                        </span>
+                        <input type="text" name="username" class="col form-control input" id="username">
+                        <span asp-validation-for="Username"></span>
+                    </div>
+                    <div class="row my-2">
+                        <span class="col-2 lead text-end">
+                            Telephone
+                        </span>
+                        <input type="text" name="phone" class="col form-control input" id="phone">
+                        <span asp-validation-for="Telephone"></span>
+                    </div>
+                    <div class="row my-2">
+                        <span class="col-2 lead text-end">
+                            Date of Birth
+                        </span>
+                        <input type="text" name="birthday" class="col form-control input" id="date">
+                        <span asp-validation-for="DateOfBirth"></span>
+                    </div>
+
+                    <div class="second-section-h1-container pt-3">
+                        <span class="h3">Your Password</span>
+                        <span asp-validation-for="Password"></span>
+                        <hr class="mt-2">
+                    </div>
+
+                    <div class="row my-2">
+                        <span class="col-2 lead text-end">
+                            Password
+                        </span>
+                        <input type="password" name="password" id="password" class="col form-control input" id="password">
+                        <span class="hidden text-center" id="message4"></span>
+                    </div>
+                    <div class="row my-2">
+                        <span class="col-2 lead text-end">
+                            Password Confirm
+                        </span>
+                        <input type="password" name="confirm_pw" id="confirmpass" class="col form-control input">
+                        <span class="hidden text-center" id="message5"></span>
+                    </div>
+                </form>
+
+                <div class="second-section-h1-container pt-3">
+                    <span class="h3">Newsletter</span>
+                    <hr>
+                </div>
+
+                <div class="row my-2 d-flex">
+                    <span class="col-2 lead text-end align-self-top">
+                        Subscribe
+                    </span>
+                    <div class="col form-check form-switch m-0">
+                        <input class="form-check-input" type="checkbox" id="flexSwitchCheckDefault">
+                        <label class="form-check-label" for="flexSwitchCheckDefault">
+                            Yes/No
+                        </label>
+                    </div>
+                </div>
+
+
+                <div class="row">
+                    <div class="d-flex flex-row align-items-center">
+                        <span class="col text-end">I have read and agree to the <b>Privacy Policy</b></span>
+                        <input class="form-check-input mx-2" type="checkbox" value="" id="flexCheckDefault">
+                        <button class="btn btn-primary mx-3 btn-radius" id="btn" disabled>Continue</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+<!-- END SECOND SECTION -->
